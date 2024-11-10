@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+
+    <!--Custom Styling -->
+    <link rel="stylesheet" href="style.css">
+    <title>Music of Manchester</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/icon.png">
+</head>
+
+<body onload="document.body.style.opacity='1'">
+
+<nav class="navbar">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="Assets/hamburger.svg" alt="A hamburger menu icon" width="32px" height="32px">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="page1.html">1970s</a></li>
+            <li><a class="dropdown-item" href="page2.html">1980s</a></li>
+            <li><a class="dropdown-item" href="page3.html">1990s-00s</a></li>
+            <li><a class="dropdown-item" href="page4.html">2010s-20s</a></li>
+        </ul>
+    </div>
+    <a class="navbar-brand" href="#">Music of Manchester</a>
+</nav>
+
+<div class="hero-section">
+    <img class="background-image" src="Assets/IndexHero.jpg" alt="A blurred image of a quartet band playing in a daylight-lit room with bare brick walls and wooden flooring">
+    <p class="h1">The Music of Manchester</p>
+    <p class="h3">A timeline of popular bands over the decades</p>
+    <p class="h5">Scroll down to read</p>
+</div>
+
+<div class="banner">
+    <p class="h2">Over the years</p>
+    <p class="h4">Explore 60 years of iconic bands</p>
+</div>
+
+<div class="container-fluid p-4" id="card-container">
+
+    <div class="row">
+        <div class="col-12 col-lg-6 m-0 p-2 position-relative hover-overlay">
+            <img src="Assets/Card1.jpg" alt="An image of the band Joy Division stood outside underneath a motorway bridge" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="overlay">
+                <div class="overlay-text">
+                    <p class="h2">1970s</p>
+                    <p class="h6">The raw power of punk and the shadowy echoes of post-punk take root.</p>
+                </div>
+                <a href="page1.html">
+                    <button type="button" class="btn">Read More</button>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 m-0 p-2 position-relative hover-overlay">
+            <img src="Assets/Card2.jpg" alt="A closeup portrait of the band The Smiths with a plain gray background" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+
+            <div class="overlay">
+                <div class="overlay-text">
+                    <p class="h2">1980s</p>
+                    <p class="h6">Gothic, angsty anthems and the start of the Madchester revolution.</p>
+                </div>
+                <a href="page2.html">
+                    <button type="button" class="btn">Read More</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 col-lg-6 m-0 g-3 p-2 position-relative hover-overlay">
+            <img src="Assets/Card3.jpg" alt="An image of the band Oasis stood outside in a car park" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="overlay">
+                <div class="overlay-text">
+                    <p class="h2">1990s-00s</p>
+                    <p class="h6">Britpop rules the world.</p>
+                </div>
+                <a href="page3.html">
+                    <button type="button" class="btn">Read More</button>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 m-0 p-2 g-3 position-relative hover-overlay">
+            <img src="Assets/Card4.jpg" alt="A closeup image of the band Pale Waves with a navy blue background" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="overlay">
+                <div class="overlay-text">
+                    <p class="h2">2010s-20s</p>
+                    <p class="h6">New sounds and old icons bring a historic legacy full circle.</p>
+                </div>
+                <a href="page4.html">
+                    <button type="button" class="btn">Read More</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="caption">Made by Josh</p>
+    <div class="social-links">
+        <a class="small-link" href="https://www.instagram.com/josmad23/">Instagram</a>
+        <a class="small-link" href="https://github.com/FeDevanced">Github</a>
+    </div>
+
+</div>
+
+<script src="sticky.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

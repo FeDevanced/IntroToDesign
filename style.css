@@ -1,0 +1,231 @@
+/* ===== Global CSS ===== */
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color);
+    opacity: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s; /* Safari */
+}
+
+
+/* ===== IBM Plex ===== */
+.ibm-plex-serif-medium {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.ibm-plex-serif-semibold {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.ibm-plex-sans-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ibm-plex-sans-medium {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.ibm-plex-sans-semibold {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* ===== Text Sizes & Colours ===== */
+.h1{ /* Main Titles */
+    font-size: 72px;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    color: var(--accent-color);
+    filter: drop-shadow(5px 5px 10px #000000);
+}
+@media (max-width: 768px) {
+    .h1{
+        font-size: 48px;
+    }
+
+} /* Smaller h1 for smaller screens */
+.h2{ /* Secondary Titles */
+    font-size: 40px;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    color: var(--accent-color);
+    filter: drop-shadow(5px 5px 10px #000000);
+}
+.h3{ /* Main Headings */
+    font-size: 33px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    filter: drop-shadow(5px 5px 10px #000000);
+}
+.h4{ /* Secondary Headings */
+    font-size: 28px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.h5{ /* Body Headings */
+    font-size: 18px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.h6{ /* Secondary Headings */
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--text-color);
+}
+.p{ /* Body */
+    font-size: 16px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--text-color);
+}
+
+:root {
+    --background-color: #171717;
+    --text-color: #fff;
+    --accent-color: #D4C02B;
+}
+
+
+/* ===== Navbar ===== */
+.navbar{
+    width: fit-content;
+    margin: 16px;
+    background-color: var(--background-color);
+    padding: 16px;
+    border-radius: 12px;
+    position: absolute;
+}
+.navbar a{
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+.dropdown-menu{
+    background-color: var(--background-color);
+    border-radius: 12px;
+}
+.dropdown-menu li a{
+    color: var(--text-color);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Yellow scrolling navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: fit-content;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    transition: ease-in 0.3s;
+    background-color: var(--accent-color);
+}
+.sticky a{
+    color: black;
+}
+.sticky img{
+    filter: invert();
+}
+
+
+/* ===== Hero Section ===== */
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+}
+@media (max-width: 768px) {
+    .hero-section{
+        padding: 16px;
+    }
+} /* Less padding for smaller screens */
+.hero-section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -999;
+} /* Background Image positioning stuff */
+.hero-section .h5{
+    position: absolute;
+    bottom: 16px;
+    opacity: 50%;
+} /* Positioning for 'scroll down to read' text */
+
+/* ===== Banner ===== */
+.banner{
+    padding: 32px;
+}
+
+
+/* ===== Card Overlay Styles ===== */
+#card-container{
+    background-color: var(--background-color);
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #00000050;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px;
+}
+.overlay .btn{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin-top: 1rem;
+}
+.overlay .btn:hover{
+    text-decoration: underline;
+}
+.overlay .btn:active{
+    background-color: var(--accent-color);
+}
+
+
+/* ===== Footer ===== */
+.footer{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.social-links{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.footer a{
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+.footer a:hover{
+    color: var(--accent-color);
+}
+
+
