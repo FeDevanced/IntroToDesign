@@ -84,7 +84,7 @@ body{
     color: var(--text-color);
 }
 .p{ /* Body */
-    font-size: 16px;
+    font-size: 18px;
     font-family: "IBM Plex Sans", sans-serif;
     color: var(--text-color);
 }
@@ -98,12 +98,12 @@ body{
 
 /* ===== Navbar ===== */
 .navbar{
-    width: fit-content;
+    width: fit-content; /* Sets width, only as big as the content inside it */
     margin: 16px;
     background-color: var(--background-color);
     padding: 16px;
     border-radius: 12px;
-    position: absolute;
+    position: absolute; /* Locks it to the top of the screen*/
 }
 .navbar a{
     font-family: "IBM Plex Serif", serif;
