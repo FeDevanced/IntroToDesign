@@ -46,12 +46,6 @@ body{
     color: var(--accent-color);
     filter: drop-shadow(5px 5px 10px #000000);
 }
-@media (max-width: 768px) {
-    .h1{
-        font-size: 48px;
-    }
-
-} /* Smaller h1 for smaller screens */
 .h2{ /* Secondary Titles */
     font-size: 40px;
     font-family: "IBM Plex Serif", serif;
@@ -148,11 +142,6 @@ body{
     justify-content: center;
     padding: 36px;
 }
-@media (max-width: 768px) {
-    .hero-section{
-        padding: 16px;
-    }
-} /* Less padding for smaller screens */
 .hero-section img{
     position: absolute;
     top: 0;
@@ -172,7 +161,6 @@ body{
 .banner{
     padding: 32px;
 }
-
 
 /* ===== Card Overlay Styles ===== */
 #card-container{
@@ -229,5 +217,26 @@ body{
 
 hr{
     color: white;
+}
+
+@media (max-width: 768px) {
+    .banner{
+        padding: 24px 16px 0 16px;
+    }
+
+    .overlay, .hero-section{
+        padding: 16px;
+    }
+    .overlay .btn{
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .h1{
+        font-size: 48px;
+    }
+    .h6{
+        font-size: 16px;
+    }
+
 }
 
