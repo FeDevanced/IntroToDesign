@@ -12,7 +12,6 @@ html, body{
     margin-right: 3rem;
     margin-left: 3rem;
 }
-
 .hero-subpage{
     padding: 6rem 48px 48px 48px;
 }
@@ -23,14 +22,12 @@ html, body{
     padding-top: 16px;
     margin: auto;
 }
-
 .article-title{
     align-content: center;
     align-items: center;
     background-color: var(--background-color);
     margin-top: 4rem;
 }
-
 .article-image{
     width: 100%;
     height: 100%;
@@ -39,18 +36,15 @@ html, body{
     object-fit: cover;
     border-radius: 12px;
 }
-
 .article-image img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     background-color: var(--background-color);
 }
-
 .article .h2{
     margin-bottom: 16px;
 }
-
 .article .h5{
     margin-bottom: 8px;
 }
@@ -59,22 +53,73 @@ html, body{
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    margin-bottom: 2rem;
+}
+.embed-container .maps-embed{
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+}
+.maps-embed{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+.embed-container .article-image{
+    width: 50%;
+}
+
+.button-container .btn{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin-bottom: 2rem;
+}
+.button-container .btn:hover{
+    text-decoration: underline;
+}
+.button-container .btn:active{
+    background-color: var(--accent-color);
+}
+
+.sitemap{
+    padding-top: 6rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+.sitemap .h2{
+    margin-bottom: 16px;
+}
+.sitemap ul{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.sitemap a{
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+.sitemap a:hover{
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) { /* Small Screen Optimisation */
-    .article {
-        margin: 16px;
+    .h2 {
+        font-size: 28px;
     }
-    .article-image,
+    .p {
+        font-size: 16px;
+    }
+
     .hero-text {
         margin: 0;
     }
     .hero-text{
         margin-top: 24px;
     }
-    .article-image{
-        border-radius: 12px;
-    }
+
     .article-title {
         margin: 0;
         padding: 0;
@@ -82,16 +127,34 @@ html, body{
     .article-title .h3 {
         font-size: 20px;
     }
-    .h2 {
-        font-size: 28px;
+    .article {
+        margin: 16px;
     }
-    .p {
-        font-size: 16px;
+    .article-image,
+    .article-image{
+        border-radius: 12px;
     }
+
     .embed-container {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        margin-bottom: 16px;
+    }
+    .embed-container .maps-embed{
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+    .maps-embed{
+        margin-bottom: 16px;
+    }
+    .embed-container .article-image{
+        width: 100%;
+    }
+
+    .sitemap{
+        margin-left: 16px;
     }
 }
 
